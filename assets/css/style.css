@@ -1,0 +1,137 @@
+﻿@font-face {
+	font-family: 'Vazir';
+	src: 	url("../font/Vazir.woff") format("woff");
+	src: 	url("../font/Vazir.eot?#ie6") format("eot"),
+			url("../font/Vazir.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+.inline{
+	display: inline;
+}
+.clear-both{
+	clear: both;
+}
+hr{
+	margin-bottom: 50px;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	font-family: Vazir;
+	direction: rtl;
+	background: #eee;
+	color: #222;
+}
+header{
+	background: #C0392B;
+	border-bottom: solid 1px #711C1C;
+	text-shadow: -1px -1px 0 #711C1C;
+	color: #E6E6E6;
+	padding: 1.4em;
+	font-size: .9em;
+	text-align: center;
+}
+
+#input, #output{
+	width: 50%;
+	min-height: 100vh;
+	height: auto;
+	position: relative;
+	overflow: visible;
+	line-height: 1.8;
+	font-size: 11pt;
+	border: none;
+}
+#input{
+	float: right;
+	background: #333;
+}
+#output{
+	float: left;
+	background: #eee;
+	word-wrap: break-word;
+}
+#input::before,
+#output::before{
+	display: block;
+	font-size: 1em;
+	padding: .2em 1em .2em 0;
+}
+#input::before{
+	content: 'ویرایش:';
+	color: #aaa;
+}
+#output::before{
+	content: 'نمایش:';
+	color: #666;
+}
+#textbox{
+	padding: 1em 3em;
+	background: transparent;
+	color: #eee;
+	resize: none;
+	font-family: 'Courier New';
+	width: 100%;
+	border: none;
+	font-size: 10pt;
+	line-height: 1.7;
+}
+#preview{
+	padding: 1em 3em;
+}
+	
+
+
+#output br{
+	display: block;
+	height: 2px;
+}
+#output hr{
+	border: none;
+	border-bottom: solid 1px #D3D3D3;
+	width: 65%;
+	margin: 2.5em auto;
+}
+#output blockquote{
+	padding: 0 1em;
+	margin: 2em 1em;
+	display: block;
+	text-align: right;
+	color: #505050;
+	border-right: solid 5px #9A9A9A;
+}
+#output code{
+	background-color: #151515;
+	margin: 3em 0;
+	font-size: .9em;
+	color: #02EC02;
+	text-align: left;
+	direction: ltr;
+	display: block;
+	padding: 1em 1.5em;
+	word-wrap: break-word;
+}
+#output blockquote p{
+	display: inline;
+	text-align: justify;
+}
+#output p{
+	margin: 1em 0;
+	text-align: justify;
+}
+#output ul,
+#output ol{
+	margin: 1em 2em;
+	text-align: justify;
+	list-style-type: disc;
+}
+#output img{
+	display: block;
+	margin: 0 auto;
+}
